@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 140, 0, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 140, 0, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(255, 140, 0, 0.7);
+    }
+}
+
+@keyframes glowS {
+    0% {
+        box-shadow: 0 0 5px rgba(20, 78, 2, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgb(46, 139, 3);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(20, 78, 2, 0.7);
+    }
+}
+
+@keyframes glowR {
+    0% {
+        box-shadow: 0 0 5px rgba(2, 32, 78, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(52, 125, 235, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(2, 32, 78, 0.7);
+    }
+}
+
+@keyframes glowG {
+    0% {
+        box-shadow: 0 0 5px rgba(172, 2, 2, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(240, 97, 97, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(172, 2, 2, 0.7);
+    }
+}
+
+@keyframes glowH {
+    0% {
+        box-shadow: 0 0 5px rgba(131, 111, 1, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(238, 203, 4, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(131, 111, 1, 0.7);
+    }
+}
+
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-15px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floating-heading {
+    animation: float 2s ease-in-out infinite;
+}
+
+  
+.animate-bounce {
+    animation: bounce 3s;
+}
+
+
+
+.button-glow {
+    animation: glow 1.5s infinite;
+}
+
+.input-style {
+    width: 400px;
+    font-size: 1.2em;
+    padding: 3px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-family: Sofia Sans Variable;
+    color: black;
+    font-weight: 600;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.label-style {
+    font-family: Sofia Sans Variable;
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #d1b202;
+    text-shadow: 5px 5px 5px #000000;
+    margin-bottom: 10;
+    padding-bottom: 3%;
+    display: block;
+}
+
