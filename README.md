@@ -99,7 +99,7 @@ The-Potterverse/
    
    Create a `.env` file in the root directory:
    ```env
-   PORT=2000
+   PORT=2000                    # Backend server port (avoid conflicts with frontend port 5173)
    HOST=localhost
    DBPORT=3306
    DATABASE=your_database_name
@@ -196,7 +196,7 @@ The application features all four Hogwarts houses:
 
 ## 🔒 Security Notes
 
-The current implementation stores passwords in plain text. For production use, ensure proper password hashing is implemented using bcrypt (already included in dependencies).
+⚠️ **Important**: The current implementation stores and compares passwords in plain text, which is a security vulnerability. Although bcrypt is included in the dependencies, it is not currently being used for password hashing. For production use, it is critical to implement proper password hashing using bcrypt before deploying this application.
 
 ## 📄 License
 
